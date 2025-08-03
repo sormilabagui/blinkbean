@@ -24,14 +24,16 @@ body {
   border-radius: 20px;
   background-color: transparent;
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 600px;
   margin-top: 60px;
   padding-bottom: 30px;
 }
-
+.section h3{
+  font-size: 2em;
+}
 .section img {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   border-radius: 20px;
   background-color: transparent;
   transition: all 0.3s ease;
@@ -44,7 +46,7 @@ button {
   padding: 10px 20px;
   margin: 15px 5px;
   border-radius: 12px;
-  font-size: 20px;
+  font-size: 1.5em;
   cursor: pointer;
 }
 
