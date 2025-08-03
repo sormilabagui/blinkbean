@@ -7,16 +7,13 @@ body {
   background-image: url(image/css-course-banner-forground.gif),url(image/css-course-banner-background.png);
   background-repeat: no-repeat,no-repeat;
   background-position: top,top;
-  background-size:contain;
+  background-size: contain;
   margin: 70px;
 }
 
 .container {
   padding: 40px 20px;
-  
-  
 }
-
 
 .section {
   display: none;
@@ -29,13 +26,14 @@ body {
   margin: 20px auto;
   max-width: 500px;
   margin-top: 80px;
-  
 }
 
 .section img {
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 20px;
   background-color: transparent;
+  transition: all 0.3s ease;
 }
 
 button {
@@ -52,61 +50,65 @@ button {
 button:hover {
   background-color: #ffb3ba;
 }
+
+/* Tablet and Medium Screens */
 @media screen and (max-width: 768px) {
-    body{
-      background-position:inherit;
-    }
-    .container, .section{
-        width: 90%;
-        padding: 15px;
-    }
+  body {
+    background-position: inherit;
+  }
 
-    .container h1, .section h1 {
-        font-size: 1.5rem;
-    }
+  .container, .section {
+    width: 90%;
+    padding: 15px;
+  }
 
-    .container p, .section p {
-        font-size: 1.5rem;
-    }
+  .container h1, .section h1 {
+    font-size: 1.7rem;
+  }
 
-    .section img{
-        width: 80%;
-        height: auto;
-    }
+  .container p, .section p {
+    font-size: 1.2rem;
+  }
 
-    button {
-        width: 170px;
-        padding: 10px;
-        margin: 5px;
-        font-size: 1.3rem;
-    }
+  .section img {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  button {
+    width: 180px;
+    font-size: 1.1rem;
+    padding: 12px;
+  }
 }
 
+/* Mobile Screens */
 @media screen and (max-width: 480px) {
-  body{
-      background-position:inherit;
-    }
-    .container, .section {
-        width: 95%;
-        padding: 10px;
-    }
+  body {
+    background-position: inherit;
+  }
 
-    .container h1, .section h1 {
-        font-size: 2rem;
-    }
+  .container, .section {
+    width: 95%;
+    padding: 10px;
+  }
 
-    .container p, .section p {
-        font-size: 1rem;
-    }
+  .container h1, .section h1 {
+    font-size: 1.8rem;
+  }
 
-    .section img {
-        width: 90%;
-    }
+  .container p, .section p {
+    font-size: 1.1rem;
+  }
 
-    button {
-        width: 120px;
-        padding: 8px;
-        font-size: 1rem;
-    }
+  .section img {
+    width: 95%;
+    max-width: 470px;
+  }
+
+  button {
+    width: 160px;
+    padding: 10px;
+    font-size: 1.4rem;
+  }
 }
-
